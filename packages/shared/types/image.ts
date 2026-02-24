@@ -1,0 +1,19 @@
+import { Label } from "./label";
+
+export interface Image {
+  id: number;
+  title: string;
+  storage_key: string;
+  url: string;
+  mime_type: string;
+  size_bytes: number;
+  width: number;
+  height: number;
+  is_pinned: boolean;
+  is_archived: boolean;
+  is_trashed: boolean;
+  user_id: number;
+  labels?: Label[];
+  created_at: string;
+  updated_at: string;
+}
